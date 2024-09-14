@@ -9,22 +9,22 @@ node default {
         Package { provider => chocolatey, }
     }
     package { 'python':
-        ensure          => latest,
+        ensure          => present,
         provider        => 'chocolatey',
         install_options => ['-y']
     }
     package { 'vscode':
-        ensure          => 'latest',
+        ensure          => 'present',
         provider        => 'chocolatey',
         install_options => ['-y']
     }
     package { 'firefox':
-        ensure          => 'latest',
+        ensure          => 'present',
         provider        => 'chocolatey',
         install_options => ['-y']
     }
     package { 'googlechrome':
-        ensure          => 'latest',
+        ensure          => 'present',
         provider        => 'chocolatey',
         install_options => ['-y']
     }
