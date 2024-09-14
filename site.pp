@@ -28,4 +28,5 @@ node default {
         provider        => 'chocolatey',
         install_options => ['-y']
     }
+    include veyon
 }
