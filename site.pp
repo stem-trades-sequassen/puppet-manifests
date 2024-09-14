@@ -1,9 +1,10 @@
 node default {
     include chocolatey
     chocolateysource {'chocolatey':
-        ensure   => present,
-        location => 'https://chocolatey.org/api/v2',
-        priority => 1,
+        ensure             => present,
+        location           => 'https://chocolatey.org/api/v2',
+        priority           => 1,
+        chocolatey_version => 'latest'
     }
     if $::kernel == 'windows' {
         Package { provider => chocolatey, }
