@@ -28,5 +28,9 @@ node default {
         provider        => 'chocolatey',
         install_options => ['-y']
     }
-    include veyon
+    package { 'veyon':
+        ensure          => 'present',
+        provider        => 'chocolatey',
+        install_options => ['-y']
+    }
 }
