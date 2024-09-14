@@ -9,27 +9,27 @@ node default {
         Package { provider => chocolatey, }
     }
     package { 'python':
-        ensure          => present,
+        ensure          => 'latest',
         provider        => 'chocolatey',
         install_options => ['-y']
     }
     package { 'vscode':
-        ensure          => 'present',
+        ensure          => 'latest',
         provider        => 'chocolatey',
         install_options => ['-y']
     }
     package { 'firefox':
-        ensure          => 'present',
+        ensure          => 'latest',
         provider        => 'chocolatey',
         install_options => ['-y']
     }
     package { 'googlechrome':
-        ensure          => 'present',
+        ensure          => 'latest',
         provider        => 'chocolatey',
         install_options => ['-y']
     }
     package { 'veyon':
-        ensure          => 'present',
+        ensure          => 'latest',
         provider        => 'chocolatey',
         install_options => ['-y']
     }
