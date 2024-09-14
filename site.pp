@@ -8,4 +8,13 @@ node default {
     if $::kernel == 'windows' {
         Package { provider => chocolatey, }
     }
+    package { 'python':
+        ensure   => latest,
+        provider => 'chocolatey',
+    }
+    package { 'vscode':
+        ensure          => 'latest',
+        provider        => 'chocolatey',
+        install_options => ['-y']
+    }
 }
