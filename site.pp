@@ -11,6 +11,7 @@ node default {
     package { 'python':
         ensure   => latest,
         provider => 'chocolatey',
+        install_options => ['-y']
     }
     package { 'vscode':
         ensure          => 'latest',
