@@ -1,6 +1,7 @@
 # puppet-manifests
 Puppet manifests for Puppet Server to organize nodes.
 Ran on Puppet Agent 7.33.0 and Puppet Server 7.9.5
+Endpoint should be configured to use the Tailnet at this point, otherwise referenced hostnames will mean nothing to it.
 
 ## Note to directors:
 Manually install puppet 
