@@ -1,5 +1,5 @@
 # puppet-manifests
-# Most likely defunct. Ansible seems to be more our style.
+# Deprecated. Area now uses Ansible to prevent server overhead.
 Puppet manifests for Puppet Server to organize nodes.
 Ran on Puppet Agent 7.33.0 and Puppet Server 7.9.5
 Endpoint should be configured to use the Tailnet at this point, otherwise referenced hostnames will mean nothing to it.
